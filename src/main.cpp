@@ -14,7 +14,7 @@ int main()
 
     // 初始化模型
     rknn_app_context_t app_ctx = {0};
-    if (init_yolo11_model("/home/ling/CLionProjects/LCAR_Opencv/best.rknn", &app_ctx) < 0)
+    if (init_yolo11_model("/home/ling/CLionProjects/LCAR_Opencv/best.rknn", &app_ctx) < 0) //todo need fix
     {
         printf("Init model failed\n");
         return -1;
@@ -36,7 +36,6 @@ int main()
         {
             if (results.count > 0)
             {
-                std::cout << "Detected " << results.count << " objects:" << std::endl;
                 for (int i = 0; i < results.count; i++)
                 {
                     object_detect_result* det = &results.results[i];
@@ -61,13 +60,11 @@ int main()
                                 cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(0, 0, 0), 1);
 
                 }
-                std::cout << "---" << std::endl;
             }
             else
             {
             }
         }
-        cv::imshow("Detection Result", frame);
         // 按ESC退出
         if (cv::waitKey(1) == 27) break;
     }
