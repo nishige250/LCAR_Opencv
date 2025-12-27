@@ -17,6 +17,8 @@ add_executable(LCAR_Opencv
         include/yolo11.h
 )  #[Clion need them]
 
+
+
 target_include_directories(LCAR_Opencv
         PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/include)
