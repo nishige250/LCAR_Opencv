@@ -1,6 +1,4 @@
-//
-// Created by ling on 2025/7/29.
-//
+
 
 #ifndef WORKSPACE_RKNN_API_H
 #define WORKSPACE_RKNN_API_H
