@@ -5,6 +5,7 @@
 #ifndef LCAR_OPENCV_YOLO11_H
 #define LCAR_OPENCV_YOLO11_H
 
+
 #include <vector>
 #include <cmath>
 #include <stdint.h>
