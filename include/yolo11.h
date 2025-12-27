@@ -1,6 +1,4 @@
-//
-// Created by ling on 2025/7/29.
-//
+
 
 #ifndef LCAR_OPENCV_YOLO11_H
 #define LCAR_OPENCV_YOLO11_H
